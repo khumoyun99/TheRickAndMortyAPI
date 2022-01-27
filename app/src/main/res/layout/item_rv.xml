@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benjamin"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/item_image"
+        />
+
+    <TextView
+        android:id="@+id/item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alive"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:paddingLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@id/item_name"
+        app:layout_constraintLeft_toRightOf="@id/item_image"
+        />
+    <TextView
+        android:id="@+id/item_species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - Poopybutthole"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/item_name"
+        app:layout_constraintLeft_toRightOf="@id/item_status"
+        />
+    <TextView
+        android:id="@+id/Last_known_location_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last known location:"
+        android:textColor="#A38282"
+        android:textSize="14sp"
+        android:paddingLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@id/item_status"
+        app:layout_constraintLeft_toRightOf="@id/item_image"
+        />
+    <TextView
+        android:id="@+id/location_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interdimensional Cable"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:paddingLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@id/Last_known_location_tv"
+        app:layout_constraintLeft_toRightOf="@id/item_image"
+        />
+    <TextView
+        android:id="@+id/first_seen_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First seen in:"
+        android:textColor="#706060"
+        android:textSize="14sp"
+        android:paddingLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@id/location_name_tv"
+        app:layout_constraintLeft_toRightOf="@id/item_image"
+        />
+    <TextView
+        android:id="@+id/first_seen_in_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rixty Minutes"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/first_seen_in"
+        app:layout_constraintLeft_toRightOf="@id/item_image"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
