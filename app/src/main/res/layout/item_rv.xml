@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
@@ -94,10 +95,5 @@
         app:layout_constraintTop_toBottomOf="@id/first_seen_in"
         app:layout_constraintLeft_toRightOf="@id/item_image"
         />
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

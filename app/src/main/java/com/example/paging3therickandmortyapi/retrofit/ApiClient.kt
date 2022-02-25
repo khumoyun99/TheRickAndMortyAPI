@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object ApiClient {
 
 
-    const val BASE_URL = "https://rickandmortyapi.com/api/character/"
+    const val BASE_URL = "https://rickandmortyapi.com/api/"
 
     fun getRetrofit(): Retrofit {
         return Retrofit.Builder()

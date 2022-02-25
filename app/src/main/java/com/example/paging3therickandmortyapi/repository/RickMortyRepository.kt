@@ -7,17 +7,19 @@ import kotlinx.coroutines.flow.flow
 
 class RickMortyRepository(
     val apiService: ApiService,
-    val rickMortyDao: RickMortyDao
+//    val rickMortyDao: RickMortyDao
 ) {
 
-    suspend fun getAllRickMortyData() = flow { emit(apiService.getAllRickMortyData()) }
+//    suspend fun getAllRickMortyData() = flow { emit(apiService.getAllRickMortyData()) }
+//
+//    suspend fun addAllRickMortyData(list:List<RickMortyEntity>) = rickMortyDao.addAllRickMortyList(list)
+//
+//    suspend fun getDbAllRickMortyData() = flow { emit(rickMortyDao.getAllRickMortyData()) }
+//
+//    suspend fun deleteRickMortyData(rickMortyEntity: RickMortyEntity) = flow {emit(rickMortyDao.deleteRickMortyData(rickMortyEntity))  }
 
-    suspend fun addAllRickMortyData(list:List<RickMortyEntity>) = rickMortyDao.addAllRickMortyList(list)
-
-    suspend fun getDbAllRickMortyData() = flow { emit(rickMortyDao.getAllRickMortyData()) }
-
-    suspend fun deleteRickMortyData(rickMortyEntity: RickMortyEntity) = flow {emit(rickMortyDao.deleteRickMortyData(rickMortyEntity))  }
-
+    //paging
+    suspend fun getAllRickMortyDataPaging(page:Int) = flow { emit(apiService.getAllRickMortyDataPaging(page = page)) }
 
 
 
